@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:UploadServer" x:Class="UploadServer.UploadServerPage">
+<ScrollView>
+    <StackLayout Padding="20" Orientation="Vertical">
+    
+    <Label Text="Ambil Foto" FontSize="36" FontAttributes="Bold"/>
+    <Button Text="Galeri" Clicked="Pick_Clicked"/>
+    <Button Text="Camera" Clicked="Take_Clicked"/>
+            
+            <Image x:Name="FileImage" WidthRequest="400" HeightRequest="220"/>
+
+            <Label x:Name="LocalPathLabel"
+            TextColor="Black"
+            FontSize="18"/>
+          
+            <Button Text="Upload Foto" Clicked="Upload_Clicked"/>
+
+            <Label x:Name="RemotePathLabel" TextColor="Black" FontSize="18"/>
+
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
